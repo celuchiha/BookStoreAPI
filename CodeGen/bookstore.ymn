@@ -1,0 +1,483 @@
+{
+  "id": "xTDZ-a9cdEuTlQDo80dFIg",
+  "creator": "Yellicode Modeler 0.3.6.0",
+  "modelTypeName": "Yellicode YML",
+  "modelTypeVersion": "0.1.0",
+  "model": {
+    "elementType": "model",
+    "packagedElements": [
+      {
+        "elementType": "class",
+        "name": "Book",
+        "visibility": "public",
+        "ownedAttributes": [
+          {
+            "elementType": "property",
+            "aggregation": "none",
+            "name": "Title",
+            "visibility": "public",
+            "order": 2,
+            "type": "string_id",
+            "id": "STVEWh8HyUSyJcx77_XlEg",
+            "ownedComments": [
+              {
+                "elementType": "comment",
+                "body": "The book title."
+              }
+            ]
+          },
+          {
+            "elementType": "property",
+            "aggregation": "none",
+            "name": "ISBN",
+            "visibility": "public",
+            "order": 6,
+            "type": "string_id",
+            "id": "aNHksEwp_ES2qZEIkDK5yQ",
+            "ownedComments": [
+              {
+                "elementType": "comment",
+                "body": "Contains the book's ISBN-13 code."
+              }
+            ]
+          },
+          {
+            "elementType": "property",
+            "aggregation": "none",
+            "name": "Language",
+            "visibility": "public",
+            "order": 5,
+            "type": "1RYO4tnKCke2emwuAD1kCQ",
+            "id": "ASFMEVA6zUu93meoBDWNPA",
+            "ownedComments": [
+              {
+                "elementType": "comment",
+                "body": "The language the book is written in."
+              }
+            ]
+          },
+          {
+            "elementType": "property",
+            "aggregation": "shared",
+            "name": "Authors",
+            "visibility": "public",
+            "order": 3,
+            "upperValue": {
+              "elementType": "literalUnlimitedNatural",
+              "value": "*"
+            },
+            "lowerValue": {
+              "elementType": "literalInteger",
+              "value": 1
+            },
+            "type": "-EcIbQQgm0KmoF6t18IXkw",
+            "id": "xPTBe8SBjk-5VW-sKLqewg",
+            "ownedComments": [
+              {
+                "elementType": "comment",
+                "body": "Lists one or more authors the book was written by."
+              }
+            ]
+          },
+          {
+            "elementType": "property",
+            "aggregation": "none",
+            "name": "Category",
+            "visibility": "public",
+            "order": 4,
+            "upperValue": {
+              "elementType": "literalUnlimitedNatural",
+              "value": "1"
+            },
+            "lowerValue": {
+              "elementType": "literalInteger",
+              "value": 1
+            },
+            "type": "-rDc_SL9eU6Iltfm9gju3Q",
+            "id": "hicCs43UOUa78PiE56tRrQ",
+            "ownedComments": [
+              {
+                "elementType": "comment",
+                "body": "The category that this book belongs to."
+              }
+            ]
+          },
+          {
+            "elementType": "property",
+            "aggregation": "none",
+            "isID": true,
+            "name": "Id",
+            "visibility": "public",
+            "order": 1,
+            "type": "integer_id",
+            "id": "vHasxowfQUGY6WtSIyT3jg",
+            "ownedComments": [
+              {
+                "elementType": "comment",
+                "body": "Gets the unique id of this Book."
+              }
+            ]
+          }
+        ],
+        "id": "lWOJpfT_okumE-U4Mnx3ww",
+        "ownedComments": [
+          {
+            "elementType": "comment",
+            "body": "The Book class represents a book that is for sale in our bookstore."
+          }
+        ]
+      },
+      {
+        "elementType": "class",
+        "name": "Author",
+        "visibility": "public",
+        "ownedAttributes": [
+          {
+            "elementType": "property",
+            "aggregation": "none",
+            "name": "FirstName",
+            "visibility": "public",
+            "order": 2,
+            "type": "string_id",
+            "id": "E90891mw00enaSkTgpsRRQ",
+            "ownedComments": [
+              {
+                "elementType": "comment",
+                "body": "The author's first name."
+              }
+            ]
+          },
+          {
+            "elementType": "property",
+            "aggregation": "none",
+            "name": "LastName",
+            "visibility": "public",
+            "order": 3,
+            "type": "string_id",
+            "id": "_1duxMc2tUyNF_-0y3bVZw",
+            "ownedComments": [
+              {
+                "elementType": "comment",
+                "body": "The author's last name."
+              }
+            ]
+          },
+          {
+            "elementType": "property",
+            "aggregation": "none",
+            "name": "About",
+            "visibility": "public",
+            "order": 4,
+            "type": "string_id",
+            "id": "qrmjlzIE1EyQk-lmBfYEjQ",
+            "ownedComments": [
+              {
+                "elementType": "comment",
+                "body": "Contains a short introductory text about the author."
+              }
+            ]
+          },
+          {
+            "elementType": "property",
+            "aggregation": "none",
+            "isID": true,
+            "name": "Id",
+            "visibility": "public",
+            "order": 1,
+            "type": "integer_id",
+            "id": "SsYU-OENgUOikxz1lIsvng",
+            "ownedComments": [
+              {
+                "elementType": "comment",
+                "body": "Gets the unique id of this Author."
+              }
+            ]
+          }
+        ],
+        "id": "-EcIbQQgm0KmoF6t18IXkw",
+        "ownedComments": [
+          {
+            "elementType": "comment",
+            "body": "The Author class represents a single book author."
+          }
+        ]
+      },
+      {
+        "elementType": "class",
+        "name": "Category",
+        "visibility": "public",
+        "ownedAttributes": [
+          {
+            "elementType": "property",
+            "aggregation": "none",
+            "name": "Name",
+            "visibility": "public",
+            "order": 2,
+            "type": "string_id",
+            "id": "PCxoQ_VWwkGFCrrDYPxA1Q",
+            "ownedComments": [
+              {
+                "elementType": "comment",
+                "body": "The name of the category."
+              }
+            ]
+          },
+          {
+            "elementType": "property",
+            "aggregation": "none",
+            "name": "Description",
+            "visibility": "public",
+            "order": 3,
+            "type": "string_id",
+            "id": "gaPfrN3jzkifF_9cls9ozw",
+            "ownedComments": [
+              {
+                "elementType": "comment",
+                "body": "The description of the category."
+              }
+            ]
+          },
+          {
+            "elementType": "property",
+            "aggregation": "none",
+            "isID": true,
+            "name": "Id",
+            "visibility": "public",
+            "order": 1,
+            "type": "integer_id",
+            "id": "2ERCYSPNckK5W0KpDLSmJg",
+            "ownedComments": [
+              {
+                "elementType": "comment",
+                "body": "Gets the unique id of this Category."
+              }
+            ]
+          }
+        ],
+        "id": "-rDc_SL9eU6Iltfm9gju3Q",
+        "ownedComments": [
+          {
+            "elementType": "comment",
+            "body": "We use categories to organize our books. A book can only belong to a single category."
+          }
+        ]
+      },
+      {
+        "elementType": "class",
+        "name": "Language",
+        "visibility": "public",
+        "ownedAttributes": [
+          {
+            "elementType": "property",
+            "aggregation": "none",
+            "name": "IsoName",
+            "visibility": "public",
+            "type": "string_id",
+            "id": "UE9qH_0ZZE-waXX0_7I5jg",
+            "ownedComments": [
+              {
+                "elementType": "comment",
+                "body": "The ISO language name."
+              }
+            ]
+          },
+          {
+            "elementType": "property",
+            "aggregation": "none",
+            "name": "IsoCode",
+            "visibility": "public",
+            "type": "string_id",
+            "id": "RBMY7Xus1ECG2BO7Xszs6Q",
+            "ownedComments": [
+              {
+                "elementType": "comment",
+                "body": "The ISO 639-2 language code."
+              }
+            ]
+          },
+          {
+            "elementType": "property",
+            "aggregation": "none",
+            "isID": true,
+            "name": "Id",
+            "visibility": "public",
+            "type": "integer_id",
+            "id": "uCYT-W_j20GP3W5EmHzOrg",
+            "ownedComments": [
+              {
+                "elementType": "comment",
+                "body": "Gets the unique id of this Language."
+              }
+            ]
+          }
+        ],
+        "id": "1RYO4tnKCke2emwuAD1kCQ",
+        "ownedComments": [
+          {
+            "elementType": "comment",
+            "body": "Defines all possible languages that books might be written in."
+          }
+        ]
+      }
+    ],
+    "name": "Bookstore",
+    "id": "2JyzFeZ5Tkmxtl_nLvHCUQ"
+  },
+  "profiles": {
+    "elementType": "model",
+    "packagedElements": [
+      {
+        "elementType": "profile",
+        "packagedElements": [
+          {
+            "elementType": "stereotype",
+            "extends": [
+              {
+                "metaClass": "class"
+              },
+              {
+                "metaClass": "property"
+              }
+            ],
+            "name": "LabeledElement",
+            "ownedAttributes": [
+              {
+                "elementType": "property",
+                "aggregation": "none",
+                "name": "LabelSingular",
+                "type": "string_id",
+                "id": "EK1PD69gCEenmBKTDJho6A",
+                "ownedComments": [
+                  {
+                    "elementType": "comment",
+                    "body": "A label that is displayed instead of the Name of the Class or Attribute."
+                  }
+                ]
+              },
+              {
+                "elementType": "property",
+                "aggregation": "none",
+                "name": "LabelPlural",
+                "type": "string_id",
+                "id": "HjmElC5ekEeTSzt57v-UXA",
+                "ownedComments": [
+                  {
+                    "elementType": "comment",
+                    "body": "A label that is displayed instead of the Name of the Class or Attribute."
+                  }
+                ]
+              }
+            ],
+            "id": "EJBYdoNCKk20HC82fSMqYA",
+            "ownedComments": [
+              {
+                "elementType": "comment",
+                "body": "Controls both plural and singular texts to be generated for UI labels."
+              }
+            ]
+          },
+          {
+            "elementType": "enumeration",
+            "ownedLiterals": [
+              {
+                "elementType": "enumerationLiteral",
+                "specification": {
+                  "elementType": "literalString",
+                  "value": "phone"
+                },
+                "name": "Phone",
+                "order": 3,
+                "id": "GY77FU9JAUGRRkOs0qTKWQ"
+              },
+              {
+                "elementType": "enumerationLiteral",
+                "specification": {
+                  "elementType": "literalString",
+                  "value": "text"
+                },
+                "name": "TextSingleLine",
+                "order": 1,
+                "id": "EijDRRhOV0edg7XqnVna8Q"
+              },
+              {
+                "elementType": "enumerationLiteral",
+                "specification": {
+                  "elementType": "literalString",
+                  "value": "textarea"
+                },
+                "name": "TextMultiLine",
+                "order": 2,
+                "id": "AeCXqnsRaEKG78nSMXzrrQ"
+              },
+              {
+                "elementType": "enumerationLiteral",
+                "specification": {
+                  "elementType": "literalString",
+                  "value": "email"
+                },
+                "name": "Email",
+                "order": 4,
+                "id": "CzMYQpEf70KojeRsFYtAxg"
+              },
+              {
+                "elementType": "enumerationLiteral",
+                "specification": {
+                  "elementType": "literalString",
+                  "value": "password"
+                },
+                "name": "Password",
+                "id": "tOtoFg_8cU2si1glkAs7Pw"
+              }
+            ],
+            "baseType": "string_id",
+            "name": "DataType",
+            "visibility": "public",
+            "id": "5xb6mZ3CHUe65B4IawGhLw",
+            "ownedComments": [
+              {
+                "elementType": "comment",
+                "body": "Represents an enumeration of the data types associated with data fields."
+              }
+            ]
+          },
+          {
+            "elementType": "stereotype",
+            "extends": [
+              {
+                "metaClass": "property"
+              }
+            ],
+            "name": "DataField",
+            "ownedAttributes": [
+              {
+                "elementType": "property",
+                "aggregation": "none",
+                "name": "DataType",
+                "type": "5xb6mZ3CHUe65B4IawGhLw",
+                "id": "DbXF2xqetUyHpej0SDb6iQ",
+                "ownedComments": [
+                  {
+                    "elementType": "comment",
+                    "body": "Specifies an additional type to associate with a data field."
+                  }
+                ]
+              }
+            ],
+            "id": "w2UbMgdKQkOYZeJKHupZvg",
+            "ownedComments": [
+              {
+                "elementType": "comment",
+                "body": "Marks an attribute as a data field, allowing you to associate it with an additional data type."
+              }
+            ]
+          }
+        ],
+        "name": "Bookstore",
+        "id": "IVL1XmVBLkyRqFRkhwsk1Q"
+      }
+    ],
+    "name": "Profiles",
+    "id": "I_dQWp9eY0qqxaNjOXDkbw"
+  },
+  "references": []
+}

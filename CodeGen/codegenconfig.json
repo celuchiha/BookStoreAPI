@@ -1,0 +1,29 @@
+﻿{
+    "templates": [ 
+        {
+            "templateFile": "./api/entities.template.ts",
+            "modelFile":"./bookstore"
+        },
+        {
+            "templateFile": "./api/data-context.template.ts",
+            "modelFile":"./bookstore"
+        },  
+        {
+            "templateFile": "./api/model-configuration.template.ts",
+            "modelFile":"./bookstore"
+        },        
+        {
+            "templateFile": "./api/controllers.template.ts",
+            "modelFile":"./bookstore"
+        },
+        {
+            "templateFile": "./api/resources.template.ts",
+            "modelFile":"./bookstore"
+        },
+        {
+            "templateFile": "./api/resource-mapper.template.ts",
+            "modelFile":"./bookstore"
+        }      
+    ],
+    "compileTypeScript": true
+}          

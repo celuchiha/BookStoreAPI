@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yellicode Bookstore App</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <!-- base href is required by the Angular router --> 
+    <base href= "/"> 
+    <!-- Bootstrap -->
+    <link href="/src/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Dashboard example from https://getbootstrap.com/docs/4.0/examples/ -->
+    <link href="/src/css/dashboard.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="/src/css/app.css" rel="stylesheet">
+    <!-- js -->
+    <!-- load polyfills and angular dependencies -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    
+    <!-- load our angular app with systemjs -->
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="systemjs.config.js"></script>
+    <script>
+        System.import('app').catch(function (err) { console.error(err); });
+    </script>
+    <style type="text/css">
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#">Bookstore</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="//www.yellicode.com" target="_blank">Help</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <my-app></my-app>            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "yellicode-bookstore-codegen",
+  "version": "0.1.1",
+  "description": "Yellicode bookstore tutorial",
+  "devDependencies": {
+    "@yellicode/angular": "^1.1.0",
+    "@yellicode/core": "^1.2.1",
+    "@yellicode/csharp": "^1.9.1",
+    "@yellicode/elements": "^1.2.2",
+    "@yellicode/html": "^1.2.1",
+    "@yellicode/templating": "^1.6.0",
+    "@yellicode/typescript": "^1.8.1"
+  },
+  "scripts": {
+    "codegen:once": "yellicode",
+    "codegen:watch": "yellicode --watch"
+  },
+  "dependencies": {
+    "typescript": "^4.3.5"
+  }
+}
